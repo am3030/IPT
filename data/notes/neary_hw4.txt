@@ -1,0 +1,43 @@
+==================================== General Notes ===================================
+
+Mostly the same extraneous ines of code, I can't imagine finding any more than what I 
+have already noted below. 
+
+...are too many inline comments, like one on every single line, considered extraneous?
+	ugh.
+	
+================================ Specific Assignments ================================
+
+After the loop to produce the hailstone, some students check to see if the variable 
+is 1 before printing out something. This is an extraneous line of code because is is always
+true that the variable will be 1, that is the condition that the loop must stop on. 
+     - hw4_103.py
+     - hw4_104.py
+     - hw4_123.py
+     - hw4_132.py
+
+Explicitly casting a single number to a string before printing out that number 
+is unecessary, python takes cast of that cast implicitly. This shows a misunderstanding of
+how the print function works.
+     - hw4_106.py
+
+An else clause that is unecessary, because a number can be either even or odd. There is no
+third option.
+     - hw4_118.py
+
+
+The first condition of the for loop within the while loop is NEVER True. Perhaps a 
+misunderstanding of logic here, very weird extraneous check.
+     - hw4_127.py
+
+The elif condition is the exact opposite of the if condition, which is the same thing
+as just writing an else. I would consider this to be extraneous.
+     - hw4_133.py
+     - hw4_138.py
+     - hw4_139.py
+
+
+hw4_143.py ... welp, nothing extraneous really just a completely flawed way to do it.
+
+hw4_169.py ... code could be condensed very easily. I consider this a logic error not 
+extraneos, however I am making a note of it for a potential future paper
